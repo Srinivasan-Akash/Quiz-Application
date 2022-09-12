@@ -1,0 +1,321 @@
+*{
+    background-color: #021A2A;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    zoom: 100%;
+}
+
+.quizApplication{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.start{
+    background-color: #3CA5DE;
+    height: 80%;
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start img{
+    position: absolute;
+    display: none;
+    background-color: transparent !important;
+
+}
+
+.start button{
+    border: 2px solid #021A2A;
+    padding: 3% 10%;
+    color: #021A2A;
+    font-weight: 800;
+    background-color: #3CA5DE;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.life1:hover, .life:hover{
+    box-shadow: #3CA5DE 0px 0px 100px;
+    background-color: transparent;
+}
+
+
+.start button:hover{
+    background-color: #021A2A;
+    color: #3CA5DE;
+    transition: all .800s ease;
+    box-shadow: red 50px 0px 100px;
+}
+
+#question-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.videos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+canvas{
+    left:53% !important;
+    width: 40% !important;
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ten-countdown {
+    text-align: center;
+    display:inline;
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#video, #video1{
+    width: 40%;
+    padding: 0 30px;
+    background-color: black;
+}
+
+.hide{
+    display: none !important;
+}
+
+button:hover{
+    background-color: #3CA5DE;
+    color: #000;
+    transition: all .5s ease;
+}
+
+
+
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+  
+.preloader img{
+  width: 10%;
+}
+
+.quiz div h2, div h1{
+    border: 2px solid #3CA5DE;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+div h1{
+    padding:5% 2%;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #3CA5DE;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main{
+    width: 70%;
+}
+
+
+.aside{
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line1, .line2, .line3, .line4{
+    width: 30%;
+    height: 2px;
+    z-index: 99;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.line1{
+    top: 32%;
+    left: 3%;
+}
+.line2{
+    top: 32%;
+    left: 65%;
+}
+
+.videos{
+    position: relative;
+}
+
+canvas{
+    background-color: transparent;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    padding: 0 30px;
+}
+
+.line3{
+    top: 52%;
+    left: 3%;
+}
+.line4{
+    top: 52%;
+    left: 65%;
+}
+
+.points{
+    border: 2px solid #3CA5DE;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.quiz div h2{
+    display: inline;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 1% 1%;
+}
+
+#next-btn{
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 1% 2%; 
+}
+
+.lifesave{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    width: 120%;
+}
+
+.life1, .life{
+    width: 30%;
+}
+
+.QA{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.correct{
+    background: green;
+}
+
+.wrong{
+    background-color: red;
+}
+
+
+::selection{
+    background-color: transparent;
+}
+
+@media only screen and (min-width:370px) and (max-width:600px){
+
+    .start{
+        height: 3vh;
+        width: 80vw;
+    }
+
+    #start-btn{
+        padding: 5% 10%;
+    }
+
+    #question-container{
+        flex-direction: column;
+        margin-top: 8%;
+    }
+
+    div h1{
+        margin-top: -1%;
+    }
+
+    #video1{
+        display: none;
+    }
+
+    #video{
+        width: 50%;
+    }
+
+    #next-btn, #number{
+        padding: 2% 5%;
+    }
+
+    .aside{
+        flex-direction: column;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .points{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .main{
+        width: 90%;
+    }
+
+    .line1, .line2, .line3, .line4{
+        display: none;
+    }
+
+    #ten-countdown{
+        font-size: 18px;
+    }
+    canvas{
+        left:32.5% !important;
+        width: 50% !important;
+    }
+}
+
