@@ -44,9 +44,8 @@ Go to the project directory
 - Hosted on Netlify and set up in production
 
 ## 🤔 What i have learnt By working on this project
-1. Understood where to use `flex` and where to use `grid`
-2. `flex and grid` VS `absolute positioning` where to use what
-3. How to think in a box mannered
+1. How to implement new features that i do not know before
+
 
 ## 😌 Honest Time to finish the project
 
